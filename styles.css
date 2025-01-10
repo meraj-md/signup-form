@@ -1,0 +1,202 @@
+/* General Reset and Global Font Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* Body Centering and Background Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+/* Signup Container Styling */
+.signup-container {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px 10px;
+  width: 350px;
+  border: 1.5px solid White;
+  background: white;
+}
+
+/* Header Title with Gradient Text */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #7c00ff, #7c00f3, #ff2929);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Form Group Layout and Input Styling */
+.form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.form-group input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  left: 8px;
+  color: #333;
+  transition: 0.3s ease;
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+.form-group input:focus {
+  border-color: #00f;
+}
+
+.form-group input:focus ~ label {
+  color: #00f;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  top: 0;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 4px;
+}
+
+/* Error Message Visibility and Input Error Styling */
+.error-message {
+  position: absolute;
+  bottom: -18px;
+  left: 8px;
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+input.error ~ .error-message {
+  display: block;
+}
+
+input.error {
+  border-color: red;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background: rgba(11, 11, 237, 0.916);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #bf2ef0, #7c00fe, cyan);
+}
+
+/* Divider Between Form Sections */
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  margin: 25px 0px;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  background-color: #999;
+  height: 1px;
+}
+
+.or-divider span {
+  padding: 0px 8px;
+  font-size: 15px;
+}
+
+/* Social Buttons Layout and Style */
+.social-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(to right, #bf2ef0, #7c00fe, cyan);
+  color: white;
+  border: 1.5px solid white;
+}
+
+/* Login Link Styling */
+.login-link {
+  text-align: center;
+  margin: 20px 0px 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.login-link a {
+  text-decoration: none;
+  margin-left: 4px;
+  font-size: 15px;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.login-link a:visited {
+  color: #00f;
+}
