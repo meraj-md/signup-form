@@ -16,6 +16,8 @@ A responsive and interactive sign-up page with real-time form validation, design
 - **CSS**: For responsive styling and design.
 - **JavaScript**: For form validation and interactivity.
 
+## Preview
+You can view the live project here: [Live Preview](https://meraj-md.github.io/signup-form/)
 
 ## Installation
 1. Clone the repository:
